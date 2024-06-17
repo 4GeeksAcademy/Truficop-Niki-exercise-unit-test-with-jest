@@ -9,21 +9,21 @@ test('adds 14 + 9 to equal 23', () => {
 
 test("One euro should be 1.07 dollars", function() {
     const { fromEuroToDollar } = require('./app.js');
-    const dollars = fromEuroToDollar(1);
-    const expected = 1 * 1.07;
+    const dollars = fromEuroToDollar(3.5);
+    const expected = 3.5 * 1.07;
     expect(dollars).toBe(expected);
 })
 
 test("One dollar should be 547,75 yens", function() {
     const { fromDollarToYen } = require('./app.js');
-    const yens = fromDollarToYen(1);
-    const expected = 1 * 157.6;
+    const yens = fromDollarToYen(3.5);
+    const expected = 3.5 * 157.6;
     expect(yens).toBe(expected); 
 })
 
 test("One yen should be 0.005 pounds", function() {
     const { fromYenToPound } = require('./app.js');
-    const pounds = fromYenToPound(1);
-    const expected = 1 * 0.0056;
+    const pounds = fromYenToPound(3.5);
+    const expected = 3.5 * 0.0056;
     expect(pounds).toBe(expected); 
 })
